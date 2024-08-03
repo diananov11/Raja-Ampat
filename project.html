@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raja Ampat 🏝</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      padding-top: 20px;
+      font-weight: 700;
+      color: #662eed;
+      margin: 8px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 400;
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+      padding-top: 10px 0px 10px;
+      border-radius: 30px;
+      max-width: 100%;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 15px;
+      margin: 5px 40px 0px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .paradise {
+      color: #c50000;
+    }
+
+    .in {
+      color: #283c63;
+    }
+
+    .indonesia {
+      color: #e70000;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      background: linear-gradient(
+        89.9deg,
+        rgb(208, 246, 255) 0.1%,
+        rgb(255, 237, 237) 47.9%,
+        rgb(255, 255, 231) 100.2%
+      );
+      border: 1px solid;
+      border-radius: 15px;
+    }
+
+    .new-paragrap {
+      margin-bottom: 50px;
+    }
+    .buttondiv {
+      padding: 20px 0px 10px;
+    }
+    .travel-button {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid;
+      font-size: 17px;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: #662eed;
+      color: whitesmoke;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .travel-button:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .learn-more {
+      text-decoration: none;
+    }
+
+    .learn-more:hover {
+      text-decoration: underline;
+      color: #c50000;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 15px;
+      font-family: monospace;
+      padding: 10px;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Raja Ampat Islands</h1>
+      <h2>
+        <span class="paradise">Paradise</span> <span class="in"> in </span
+        ><span class="indonesia">Indonesia</span> 🙌
+      </h2>
+      <hr />
+      <p>
+        <strong>Raja Ampat</strong>, or the <em>Four Kings</em>, is an
+        archipelago located off the northwest tip of Bird's Head Peninsula on
+        the island of New Guinea, in Indonesia's Southwest Papua province. It
+        comprises over 1,500 small islands, cays, and shoals surrounding the
+        four main islands of
+        <a href="https://en.wikipedia.org/wiki/Misool" target="_blank">
+          Misool</a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Salawati" target="_blank"
+          >Salawati</a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Batanta" target="_blank"
+          >Batanta</a
+        >, and
+        <a href="https://en.wikipedia.org/wiki/Waigeo" target="_blank">
+          Waigeo</a
+        >.
+      </p>
+      <img
+        src="https://pix8.agoda.net/hotelImages/297/2978602/2978602_17102601090058334194.jpg?ca=6&ce=1&s=1024x768"
+        width="300"
+      />
+      <p>
+        The name of Raja Ampat (<em>Raja</em> means king, and
+        <em>empat</em> means four) comes from local mythology that tells of a
+        woman who finds seven eggs. Four of the seven hatch and become kings who
+        occupy four of Raja Ampat's biggest islands whilst the other three
+        become a ghost, a woman, and a stone.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Raja_Ampat_Islands"
+          target="_blank"
+          class="learn-more"
+        >
+          More on Wikipedia
+        </a>
+      </p>
+      <div class="buttondiv">
+        <button class="travel-button">✨ Travel Now ✨</button>
+      </div>
+      <hr />
+      <p class="footer">
+        This page was built by
+        <a href="https://www.linkedin.com/in/diana-novita11" target="_blank">
+          Diana Novita</a
+        >
+        👩‍💻
+      </p>
+    </div>
+    <script>
+      function travelNow() {
+        let name = prompt("What's your name?").toLowerCase().trim();
+        let country = prompt("Where's country do you live?")
+          .toLowerCase()
+          .trim();
+        if (country === "indonesia") {
+          alert(
+            `Hi ${name}💖, terima kasih atas datanya dan akan segera kami hubungi🌤`
+          );
+        } else {
+          alert(`Hi ${name}😎, thank you! we'll be in touch🤩`);
+        }
+      }
+      let travelButton = document.querySelector("button");
+      travelButton.addEventListener("click", travelNow);
+    </script>
+  </body>
+</html>
